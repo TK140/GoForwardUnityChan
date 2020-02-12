@@ -20,7 +20,7 @@ public class CubeSound : MonoBehaviour {
 
         }
         //衝突したオブジェクトが箱の場合
-        else if (other.gameObject.name == "CubePrefab(Clone)")
+        else if (other.gameObject.tag == "CubeTag")
          {
             //音を出す
             GetComponent<AudioSource>().Play();
